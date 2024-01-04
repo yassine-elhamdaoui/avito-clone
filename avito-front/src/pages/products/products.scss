@@ -1,0 +1,33 @@
+.products{
+    padding: 20px;
+    min-height: calc(100svh - 60px);
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    gap: 20px;
+
+    h3{
+        color: rgb(241, 60, 60);
+
+        span{
+            padding: 0px 5px;
+            background-color: rgb(241, 60, 60);
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+    }
+    .cards{
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width : 622px){
+    .products{
+        .cards{
+            justify-content: center;
+        }
+    }
+}
